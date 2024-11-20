@@ -1,6 +1,10 @@
+// WasteManagementActivity.java
 package com.example.smartwastemanagement;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
@@ -25,6 +29,18 @@ public class WasteManagementActivity extends AppCompatActivity {
                 v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
                 return insets;
             });
+        }
+
+        // Setup contact button for phone dialing
+        Button contactButton = findViewById(R.id.contactButton);
+        contactButton.setOnClickListener(v -> dialPhoneNumber("07487785534")); // Replace with actual phone number
+    }
+
+    private void dialPhoneNumber(String phoneNumber) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:" + phoneNumber));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
         }
     }
 }
