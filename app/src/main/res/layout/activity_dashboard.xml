@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:ignore="ExtraText">
+
+    <!-- Dashboard Title -->
+    <TextView
+        android:id="@+id/dashboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart Waste Management Dashboard"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Placeholder Text 1: Informational Text -->
+    <TextView
+        android:id="@+id/infoText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track your waste management in real time."
+        android:textSize="16sp"
+        android:textColor="#7B7B7B"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Placeholder Text 2: Additional Information -->
+    <TextView
+        android:id="@+id/infoText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ensure timely disposal and recycling."
+        android:textSize="16sp"
+        android:textColor="#7B7B7B"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Image Placeholder -->
+    <ImageView
+        android:id="@+id/wasteImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="Dust BIn"
+        android:src="@drawable/ic_waste_management"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Placeholder Text 3: Waste Stats -->
+    <TextView
+        android:id="@+id/wasteStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Waste Processed: 1200kg"
+        android:textSize="16sp"
+        android:textColor="#FF6347"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Button to View Waste Management -->
+    <Button
+        android:id="@+id/viewWasteManagementButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Waste Management"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Button to Logout -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
