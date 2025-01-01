@@ -9,7 +9,7 @@ This is a simple Android application that provides a Smart Waste Management Dash
 - Customizable for future updates, such as adding more waste management functionalities.
 
 ## Screenshots
-![Dashboard Screenshot](images/dashboard_screenshot.png)
+![Dashboard Screenshot](images/dashboard_screenshot.jpeg)
 
 ## Technologies Used
 - **Android Studio** (IDE)
